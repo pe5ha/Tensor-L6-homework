@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tensor-L6-homework</string>
+    <string name="avatar_description">profile avatar</string>
+    <string name="dialog_button_description">open dialog button</string>
+    <string name="my_achievements">Домашнее задание по java, тест по java, домашнее задание по kotlin, тест по kotlin, домашнее задание жизненный цикл фрагментов, домашнее задание 4, домашнее задание 5</string>
+    <string name="bio_info">21 год, Санкт-Петербург</string>
+    <string name="my_email">pe5ha@vk.com</string>
+    <string name="my_number">+78005553535</string>
+    <string name="my_position">Senior Android Developer</string>
+    <string name="status_online">В сети</string>
+    <string name="my_name">Павел Науменко</string>
+</resources>
