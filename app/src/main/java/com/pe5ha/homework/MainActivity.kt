@@ -15,38 +15,45 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dialogButton = findViewById<FloatingActionButton>(R.id.floatingDialogButton)
-        dialogButton.setOnClickListener {
-            Snackbar.make(it, "TODO", Snackbar.LENGTH_SHORT).show()
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.activity_main, ProfileFragment(), null)
+                .commit()
         }
 
-        val achievements = findViewById<TextView>(R.id.achievements)
-        achievements.setOnClickListener {
-            if (achievements.maxLines == 2) {
-                achievements.maxLines = 100
-                achievements.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
-            } else {
-                achievements.maxLines = 2
-                achievements.setCompoundDrawablesWithIntrinsicBounds(
-                    0,
-                    0,
-                    R.drawable.ic_baseline_keyboard_arrow_right_24,
-                    0
-                )
-            }
-        }
 
-        val phoneNumber = findViewById<TextView>(R.id.phone_number)
-        phoneNumber.setOnClickListener {
-            val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:" + phoneNumber.text.toString())
-            startActivity(intent)
-        }
-
-        val email = findViewById<TextView>(R.id.email)
-        email.setOnClickListener {
-            Snackbar.make(it, "TODO", Snackbar.LENGTH_SHORT).show()
-        }
+//        val dialogButton = findViewById<FloatingActionButton>(R.id.floatingDialogButton)
+//        dialogButton.setOnClickListener {
+//            Snackbar.make(it, "TODO", Snackbar.LENGTH_SHORT).show()
+//        }
+//
+//        val achievements = findViewById<TextView>(R.id.achievements)
+//        achievements.setOnClickListener {
+//            if (achievements.maxLines == 2) {
+//                achievements.maxLines = 100
+//                achievements.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0)
+//            } else {
+//                achievements.maxLines = 2
+//                achievements.setCompoundDrawablesWithIntrinsicBounds(
+//                    0,
+//                    0,
+//                    R.drawable.ic_baseline_keyboard_arrow_right_24,
+//                    0
+//                )
+//            }
+//        }
+//
+//        val phoneNumber = findViewById<TextView>(R.id.phone_number)
+//        phoneNumber.setOnClickListener {
+//            val intent = Intent(Intent.ACTION_DIAL)
+//            intent.data = Uri.parse("tel:" + phoneNumber.text.toString())
+//            startActivity(intent)
+//        }
+//
+//        val email = findViewById<TextView>(R.id.email)
+//        email.setOnClickListener {
+//            Snackbar.make(it, "TODO", Snackbar.LENGTH_SHORT).show()
+//        }
 
     }
 
