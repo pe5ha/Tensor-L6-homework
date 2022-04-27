@@ -80,7 +80,6 @@
             <TextView
                 android:id="@+id/position"
                 style="@style/profile_info_style"
-                android:text="@string/my_position"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"

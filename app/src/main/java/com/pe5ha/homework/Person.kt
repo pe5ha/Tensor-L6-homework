@@ -30,14 +30,14 @@ data class Person(
             Person(
                 1,
                 "Павел Науменко 2",
-                "Android Developer",
-                "88005553535",
+                "Puff Eggcat",
+                "88008008000",
                 "mmail@mail.ru",
-                true,
-                "20.04.22",
+                false,
+                "был в сети 20.04.22",
                 "25 y.o.",
                 "Домашнее задание по java, тест по java, домашнее задание по kotlin, тест по kotlin, домашнее задание жизненный цикл фрагментов, домашнее задание 4, домашнее задание 5",
-                R.drawable.avatar
+                R.drawable.avatar2
             )
         )
     }
