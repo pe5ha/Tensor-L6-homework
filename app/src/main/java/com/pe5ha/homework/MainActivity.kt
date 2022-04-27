@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
-            val profileFragment = ProfileFragment.newInstance(1) // какой из моков показать на вью
+            val profileFragment = ProfileFragment.newInstance(0) // какой из моков показать на вью
             supportFragmentManager.beginTransaction()
                 .add(R.id.activity_main, profileFragment, null)
                 .commit()
